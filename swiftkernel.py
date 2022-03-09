@@ -12,7 +12,7 @@ class SwiftKernel(Kernel):
     implementation = 'Swift'
     implementation_version = '1.1.1'
     language = 'swift'
-    language_version = '3.0.2'
+    language_version = os.getenv("SWIFT_VERSION")
     language_info = {'mimetype': 'text/plain', 'file_extension': 'swift', 'name': 'swift'}
     banner = "Swift kernel"
     # my stuff
